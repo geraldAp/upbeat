@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+      @apply bg-primary-200 text-black px-4 py-2 rounded-md font-semibold border-2 border-primary-200 hover:bg-transparent hover:text-primary-200 hover:border-primary-200 ease-in duration-500 
+    }
+    .btn-white {
+      @apply bg-primary-200 text-[#ffffff] px-4 py-1 rounded-md font-medium border-2 border-primary-200 hover:bg-transparent hover:text-primary-200 hover:border-primary-200 ease-in duration-300 
+    }
+    .btn-contact {
+      @apply bg-primary-200 2xl:text-base text-[#ffffff] px-10 py-1 rounded-md font-medium border-2 border-primary-200 hover:bg-transparent hover:text-primary-200 hover:border-primary-200 ease-in duration-300 
+    }
+  }
+
+  
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background: #0B2434;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* #positions-card:hover span {
+  color: white;
+} */
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow-x: scroll;
+
+}
