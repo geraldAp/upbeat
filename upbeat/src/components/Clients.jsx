@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { MyContext } from "../context/MyContext";
 import Marquee from "react-fast-marquee";
-
+import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 const Clients = () => {
   const { clientImages: images } = useContext(MyContext);
 
@@ -23,7 +23,7 @@ const Clients = () => {
         gradient={true}
       >
         {images.map((image) => (
-          <img
+          <Image
             key={image.id}
             src={image.src}
             className=" cursor-pointer  2xl:w-[250px]   w-[150px] 2xl:h-[250px] h-[150px]  object-contain"

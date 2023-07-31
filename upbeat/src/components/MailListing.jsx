@@ -9,6 +9,10 @@ const MailListing = () => {
   const notify = async (e) => {
     e.preventDefault();
 
+    const url =
+      `${import.meta.env.VITE_PORT_BACKEND}/api/newsletters` ||
+      import.meta.env.VITE_PORT;
+
     if (textInput.current.value === "") {
       toast.warning("Please Enter Email", {
         position: "bottom-right",
@@ -24,7 +28,7 @@ const MailListing = () => {
 
     const letter = { email: mail };
 
-    const res = await fetch(`http://localhost:4000/api/newsletters`, {
+    const res = await fetch(url, {
       method: "POST",
       body: JSON.stringify(letter),
       headers: {
@@ -43,8 +47,8 @@ const MailListing = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-      })
-    }else{
+      });
+    } else {
       toast.success("Successfully Subscribed", {
         position: "bottom-right",
         autoClose: 5000,
@@ -53,7 +57,7 @@ const MailListing = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-      })
+      });
     }
   };
 
