@@ -23,6 +23,8 @@ const MailListing = () => {
         draggable: true,
         progress: undefined,
       });
+      textInput.current.value = "";
+      
       return;
     }
 
@@ -48,6 +50,7 @@ const MailListing = () => {
         draggable: true,
         progress: undefined,
       });
+      textInput.current.value = "";
     } else {
       toast.success("Successfully Subscribed", {
         position: "bottom-right",
@@ -58,6 +61,7 @@ const MailListing = () => {
         draggable: true,
         progress: undefined,
       });
+      textInput.current.value = "";
     }
   };
 
