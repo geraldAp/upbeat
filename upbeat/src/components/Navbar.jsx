@@ -43,7 +43,7 @@ const navigate = useNavigate()
             <li 
             onClick={() => setNav(!nav)}
             
-            className={`  text-white font-semibold md:px-0  py-2 :px-6  md:py-0 2xl:text-lg md:last:btn-primary   hover:text-primary-200 `} key={links.id}>
+            className={`  text-white md:font-semibold md:px-0  py-2 px-6 lg:text-base   md:py-0 2xl:text-lg md:last:btn-primary   hover:text-primary-200 `} key={links.id}>
               <Link to={links.hash}>{links.name}</Link>
             </li>
           ))}

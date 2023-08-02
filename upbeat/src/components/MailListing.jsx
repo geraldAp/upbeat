@@ -66,7 +66,7 @@ const MailListing = () => {
   };
 
   return (
-    <div className="px-4 md:px-8 mb-9">
+    <div className="px-3 md:px-8 mb-9">
       <h3 className=" text-xl md:text-left text-center  md:text-2xl 2xl:6xl font-medium mb-3 text-[#ffffff]">
         Join our Mailing List
       </h3>

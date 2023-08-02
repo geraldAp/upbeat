@@ -5,7 +5,7 @@ const Digital = lazy(() => import('./componentsChildren.jsx/Digital'))
 
 const Service = () => {
   return (
-    <div className="m-1  px-8 py-6">
+    <div className="m-1  px-8 py-3 md:py-6">
       <h3 
        data-aos="fade-down"
        data-aos-easing="linear"

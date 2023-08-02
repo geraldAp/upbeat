@@ -6,7 +6,7 @@ const Clients = () => {
   const { clientImages: images } = useContext(MyContext);
 
   return (
-    <div className="py-7">
+    <div className=" pt-7 pb-3  md:py-7">
       <h3
     
         className=" text-xl  md:text-2xl 2xl:text-4xl mb-6 font-medium text-center "
@@ -21,12 +21,13 @@ const Clients = () => {
         pauseOnHover={true}
         speed={60}
         gradient={true}
+        className=" flex gap-3"
       >
         {images.map((image) => (
           <Image
             key={image.id}
             src={image.src}
-            className=" cursor-pointer  2xl:w-[250px]   w-[150px] 2xl:h-[250px] h-[150px]  object-contain"
+            className=" cursor-pointer  2xl:w-[250px] w-[3.3rem] h-[3.125rem] md:w-[150px] 2xl:h-[250px] md:h-[120px]  object-contain"
           />
         ))}
       </Marquee>

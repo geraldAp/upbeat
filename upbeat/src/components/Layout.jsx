@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
       <body 
       aria-hidden="true"
       >
-        <div className="px-10 ">
+        <div className=" px-4 md:px-10 ">
           <Navbar />
           {children}
         </div>
